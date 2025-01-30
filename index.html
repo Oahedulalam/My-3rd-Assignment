@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-3rd-Assignment</title>
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- sora and adlam font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- adlam font -->
+    <style>
+        .adlam-display-font {
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .sora-font {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <!-- Tailwind Css Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <header>
+        <!-- navbar related styles -->
+        <div class="flex justify-around items-center sora-font border bg-[#FFF9F4] w-auto h-24">
+            <!-- navbar left items -->
+            <div class="flex justify-start items-center gap-3">
+                <div> <img class="h-12 w-12" src="c1-assets/logo-header.png" alt=""></div>
+                <div>
+                    <h6>Browse<span class="text-[#FFDC26]">4</span>Pets</h6>
+                </div>
+            </div>
+            <!-- navbar middle text -->
+            <div class="">
+                <ul class="flex gap-8">
+                    <li><a href="">Find a pet</a></li>
+                    <li><a href="">Breeds </a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center">
+                <div class="gap-4">
+                    <!-- nav related fontawesome icon -->
+                    <i class="fa-regular fa-bell h-6 w-6"></i>
+                    <i class="fa-solid fa-magnifying-glass h-6 w-6"></i>
+                </div>
+                <!-- nav button -->
+                <div class="gap-3"><button
+                        class="text-base font-normal border border-[#FFDC26] h-11 w-28">Login</button>
+                    <button class="text-base font-normal bg-[#FFDC26] h-11 w-36 p-2 rounded-lg">Register</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </header>
+
+
+
+
+
+    <main>
+    </main>
+
+
+
+
+
+
+    <footer>
+    </footer>
 </body>
+
 </html>
