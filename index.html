@@ -16,6 +16,26 @@
         rel="stylesheet">
     <!-- adlam font -->
     <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        @layer utilities {
+            @keyframes scroll {
+                0% {
+                    transform: translateX(100%);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            .scrolling-text {
+                animation: scroll 30s linear infinite;
+            }
+        }
+
         .adlam-display-font {
             font-family: "ADLaM Display", serif;
             font-weight: 400;
@@ -66,6 +86,12 @@
                 </div>
             </div>
         </div>
+        <!-- extra animation related section -->
+        <div class="overflow-hidden w-auto h-7 border border-yellow-400">
+            <div class="scrolling-text whitespace-nowrap text-lg font-bold text-gray-800 pt-0">
+             Note:Always provide a clean, fresh bowl of water to all animals in your care. Make it accessible by placing it near their food bowl, and remember to refill your pet's water bowl at least two times a day. This will keep your pet cool, hydrated, and healthy.
+            </div>
+        </div>
         <!-- banner section -->
         <section class="lg:flex justify-center lg:mt-16 lg:mb-32">
             <!-- banner content -->
@@ -78,6 +104,7 @@
                     make tails wag with joy!</p>
                 <!-- banner btn section -->
                 <button class="sora-font font-normal text-lg bg-[#FFDC26] h-11 w-40">Find a pet</button>
+
             </div>
             <!-- banner cat image -->
             <div><img class="lg:ml-10" src="c1-assets/cat-big.png" alt="">
@@ -85,7 +112,7 @@
 
         </section>
     </header>
-    <main class="">
+    <main>
         <!-- Browse By Categories section -->
         <h2 class="adlam-display-font text-3xl font-normal">Browse By Categories</h2>
         <div class="adlam-display-font mt-12 grid grid-cols-2 lg:grid-cols-6 mb-32 gap-6">
@@ -360,7 +387,7 @@
         </section>
         <!-- bonas section -->
         <section
-            class="absolute lg:flex justify-center content-center items-center border bg-[#FFF9F4] rounded-xl -mt-48 ml-32 h-96 w-10/12">
+            class="absolute lg:flex justify-center content-center items-center border bg-[#FFF9F4] rounded-xl -mt-48 ml-28 h-96 w-10/12">
             <!-- bonas ralated image section -->
             <div>
                 <img class=" h-80 w-72" src="c1-assets/cute-pet-mid.png" alt="">
@@ -375,9 +402,6 @@
                 <button class="btn btn-warning mt-14">Subscribe</button>
             </div>
         </section>
-
-
-
         <!-- fotar section 1 -->
         <div class="pt-80  mb-32">
             <div class="flex justify-center items-center gap-3">
